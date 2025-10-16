@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JS Methods & Loops Interactive Full</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.4/dist/css/uikit.min.css"/>
+<style>
+body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f2f5; margin:0; }
+.hero { background: linear-gradient(135deg,#1e3c72,#2a5298); color:white; padding:6rem 0; text-align:center; }
+.hero h1{ font-size:3rem; margin-bottom:1rem; font-weight:700;}
+.hero p{ font-size:1.5rem;}
+.uk-card-hover{ transition: transform 0.3s, box-shadow 0.3s; border-radius:12px; }
+.uk-card-hover:hover{ transform: translateY(-8px); box-shadow: 0 16px 30px rgba(0,0,0,0.2); }
+.uk-card-title{ margin-top:0.5rem; text-align:center; }
+pre{ background:#272822; color:#f8f8f2; padding:1rem; border-radius:8px; overflow-x:auto; }
+footer{ background: linear-gradient(135deg,#1e3c72,#2a5298); color:white; text-align:center; padding:2rem 0; margin-top:2rem; }
+.console-box{ background:#1e1e1e; color:#0f0; padding:1rem; font-family: monospace; border-radius:8px; min-height:60px; margin-top:0.5rem; overflow-x:auto; }
+.uk-navbar-container { background: #2a5298; }
+.uk-navbar-nav > li > a { color: white !important; font-weight: 500; }
+.uk-navbar-nav > li > a:hover { color: #ffdd57 !important; }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="uk-navbar-container" uk-navbar>
+  <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="#">JS Interactive</a></div>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav">
+      <li><a href="#methods">Array Methods</a></li>
+      <li><a href="#loops">Loops</a></li>
+      <li><a href="#footer">Footer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="uk-container">
+    <h1>JavaScript Methods & Loops</h1>
+    <p>Толук интерактивдүү сайт: code snippet + demo + animation</p>
+  </div>
+</section>
+
+<!-- ARRAY METHODS -->
+<section class="uk-section" id="methods">
+<div class="uk-container">
+<h2 class="uk-heading-medium uk-text-center">Array Methods</h2>
+<div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 100">
+
+<!-- map -->
+<div>
+<div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-toggle="target: #modal-map">
+<h3 class="uk-card-title">map</h3>
+<p>Ар бир элементке функция колдонуп жаңы массив түзөт.</p>
+</div>
+</div>
+
+<!-- filter -->
+<div>
+<div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-toggle="target: #modal-filter">
+<h3 class="uk-card-title">filter</h3>
+<p>Шартка жооп берген элементтерден жаңы массив түзөт.</p>
+</div>
+</div>
+
+<!-- reduce -->
+<div>
+<div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-toggle="target: #modal-reduce">
+<h3 class="uk-card-title">reduce</h3>
+<p>Массивди бир мааниге кошуп чыгарат.</p>
+</div>
+</div>
+
+<!-- forEach -->
+<div>
+<div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-toggle="target: #modal-foreach">
+<h3 class="uk-card-title">forEach</h3>
+<p>Ар бир элементке функция колдонулат, жаңы массив түзбөйт.</p>
+</div>
+</div>
+
+<!-- find -->
+<div>
+<div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-toggle="target: #modal-find">
+<h3 class="uk-card-title">find</h3>
+<p>Шартка жооп берген биринчи элементти кайтарат.</p>
+</div>
+</div>
+
+<!-- some -->
+<div>
+<div class="uk-card uk-card-default uk-card-hover uk-card-body" uk-toggle="target: #modal-some">
+<h3 class="uk-card-title">some</h3>
+<p>Шартка жооп берген элемент барбы текшерет.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- LOOPS -->
+<section class="uk-section uk-section-muted" id="loops">
+<div class="uk-container">
+<h2 class="uk-heading-medium uk-text-center">Loops</h2>
+<div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; target: > div; delay: 100">
+
+<!-- for -->
+<div><div class="uk-card uk-card-primary uk-card-hover uk-card-body" uk-toggle="target: #modal-for">
+<h3 class="uk-card-title">for</h3><p>Классикалык for loop менен массивди же сандык диапазонду айлантуу.</p></div></div>
+
+<!-- for...in -->
+<div><div class="uk-card uk-card-primary uk-card-hover uk-card-body" uk-toggle="target: #modal-forin">
+<h3 class="uk-card-title">for...in</h3><p>Объекттин key-терин айлантуу.</p></div></div>
+
+<!-- for...of -->
+<div><div class="uk-card uk-card-primary uk-card-hover uk-card-body" uk-toggle="target: #modal-forof">
+<h3 class="uk-card-title">for...of</h3><p>Iterable объектти элементтер менен айлантуу.</p></div></div>
+
+<!-- while -->
+<div><div class="uk-card uk-card-primary uk-card-hover uk-card-body" uk-toggle="target: #modal-while">
+<h3 class="uk-card-title">while</h3><p>Шартка жараша цикл иштетет.</p></div></div>
+
+<!-- do...while -->
+<div><div class="uk-card uk-card-primary uk-card-hover uk-card-body" uk-toggle="target: #modal-dowhile">
+<h3 class="uk-card-title">do...while</h3><p>Циклдин денеси бир жолу иштейт, андан соң шарт текшерилет.</p></div></div>
+
+</div>
+</div>
+</section>
+
+<!-- MODALS (ARRAY METHODS) -->
+<div id="modal-map" uk-modal>
+<div class="uk-modal-dialog uk-modal-body">
+<h2 class="uk-modal-title">map</h2>
+<p>Прост код snippet жана динамикалык demo:</p>
+<pre>const numbers=[1,2,3]; const doubled=numbers.map(n=>n*2);</pre>
+<div class="console-box" id="map-console"></div>
+<button class="uk-button uk-button-primary" onclick="runMap()">Run Demo</button>
+<button class="uk-modal-close" type="button">Close</button>
+</div>
+</div>
+
+<div id="modal-filter" uk-modal>
+<div class="uk-modal-dialog uk-modal-body">
+<h2 class="uk-modal-title">filter</h2>
+<pre>const numbers=[1,2,3,4]; const even=numbers.filter(n=>n%2===0);</pre>
+<div class="console-box" id="filter-console"></div>
+<button class="uk-button uk-button-primary" onclick="runFilter()">Run Demo</button>
+<button class="uk-modal-close" type="button">Close</button>
+</div>
+</div>
+
+<div id="modal-reduce" uk-modal>
+<div class="uk-modal-dialog uk-modal-body">
+<h2 class="uk-modal-title">reduce</h2>
+<pre>const numbers=[1,2,3,4]; const sum=numbers.reduce((acc,n)=>acc+n,0);</pre>
+<div class="console-box" id="reduce-console"></div>
+<button class="uk-button uk-button-primary" onclick="runReduce()">Run Demo</button>
+<button class="uk-modal-close" type="button">Close</button>
+</div>
+</div>
+
+<!-- MODALS (LOOPS) -->
+<div id="modal-for" uk-modal>
+<div class="uk-modal-dialog uk-modal-body">
+<h2 class="uk-modal-title">for</h2>
+<pre>for(let i=0;i<5;i++){ console.log(i); }</pre>
+<div class="console-box" id="for-console"></div>
+<button class="uk-button uk-button-primary" onclick="runFor()">Run Demo</button>
+<button class="uk-modal-close" type="button">Close</button>
+</div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+<p>© 2025 JS Methods & Loops Interactive. Бардык укуктар корголгон.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.4/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.4/dist/js/uikit-icons.min.js"></script>
+
+<script>
+function runMap(){
+  const numbers=[1,2,3]; const doubled=numbers.map(n=>n*2);
+  const box=document.getElementById('map-console'); box.innerHTML='';
+  doubled.forEach(n=>{const div=document.createElement('div'); div.textContent=n; box.appendChild(div);});
+}
+function runFilter(){
+  const numbers=[1,2,3,4]; const even=numbers.filter(n=>n%2===0);
+  const box=document.getElementById('filter-console'); box.innerHTML='';
+  even.forEach(n=>{const div=document.createElement('div'); div.textContent=n; box.appendChild(div);});
+}
+function runReduce(){
+  const numbers=[1,2,3,4]; const sum=numbers.reduce((acc,n)=>acc+n,0);
+  const box=document.getElementById('reduce-console'); box.innerHTML='Sum: '+sum;
+}
+function runFor(){
+  const box=document.getElementById('for-console'); box.innerHTML='';
+  for(let i=0;i<5;i++){ const div=document.createElement('div'); div.textContent=i; box.appendChild(div);}
+}
+</script>
+
+</body>
+</html>
